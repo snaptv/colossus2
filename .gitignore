@@ -1,0 +1,16 @@
+## .gitignore for Hauppauge HDPVR2 Driver project
+
+# IDE-related config files
+.idea/*
+
+# Intermediate build files
+*.o
+
+# Target binary files (add binaries explicitly if needed)
+*.bin
+*.so
+*.a
+
+# Test MPEG-2 Transport Stream files
+*.ts
+
