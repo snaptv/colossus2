@@ -1052,7 +1052,7 @@ void CHapi::HapiFWDownload()
 		// Entry Point Address = 0x00c05000
 
 //FGR - BUGBUG needs to use Plankton FW for transcode; llama for encode!!
-		gFirmwareFile.sparcFileName  = "llama_usb_vx_host_slave_t22_24.bin";
+		gFirmwareFile.sparcFileName  = "/lib/firmware/hauppauge/llama_usb_vx_host_slave_t22_24.bin";
 #if 0
 		if(gBoard_bus != plankton){
 			if( boardInfo.dxt_clk != DXT_CLK_24){
