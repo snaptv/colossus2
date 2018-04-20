@@ -3403,7 +3403,7 @@ HapiErrCode CHapi::ErrorMsgCallback(HAPI_ERROR_MSG_TYPE errorType, void *context
 HapiErrCode CHapi::AVDataTransfer (HAPI_AV_DATA_INFO *info, void *context)
 {
 	CHapi *p_CHapi = (CHapi *)context;
-	DbgLogTrace(("AVDataTransfer(%p) chan=%d buf=%p size=%u\n", p_CHapi, info->channel, info->buf, info->requestSize));
+	//DbgLogTrace(("AVDataTransfer(%p) chan=%d buf=%p size=%u\n", p_CHapi, info->channel, info->buf, info->requestSize));
 
 #if DBG
 	if(p_CHapi->outFileHandle){
@@ -3421,7 +3421,7 @@ HapiErrCode CHapi::AVDataTransfer (HAPI_AV_DATA_INFO *info, void *context)
 		DWORD delta_t = now - p_CHapi->_last_payload_time;
 		p_CHapi->_last_payload_time = now;
 		p_CHapi->_last_payload_delta = delta_t;
-		DbgLogTrace(("AVDataTransfer_delta_t=%u\n", delta_t));
+		//DbgLogTrace(("AVDataTransfer_delta_t=%u\n", delta_t));
 	}
 	if(p_CHapi->_p_data_transfer){
 //#ifdef OLD_DRIVER

@@ -782,8 +782,10 @@ static void DLLCALL cmdThreadFunc(void * data)
 		{
 			pHeader = (HWAPI_MSG_HEADER*)receiveBuffer;
 		
+#if 0
 			LOG_INFO(("ct <<<received msg: type=0x%x payld %d <%d>\n", 
 			pHeader->type, pHeader->payloadSize, pHeader->cookie));
+#endif
 #if 0
             if (pHeader->type == HWAPI_MESSAGE_STATUS_QUERY)
             {
