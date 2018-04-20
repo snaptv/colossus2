@@ -1040,7 +1040,7 @@ void CHapi::HapiFWDownload()
 		// [vx_host_slave] 
 		// Load Address = 0x80010000
 		// Entry Point Address = 0x80010000
-		gFirmwareFile.mipsFileName  = "mips_vx_host_slave.bin";
+		gFirmwareFile.mipsFileName  = "/lib/firmware/hauppauge/mips_vx_host_slave.bin";
 //		gFirmwareFile.mipsFileName  = "\\systemroot\\system32\\drivers\\mips_vx_host_slave.bin";
 //		gFirmwareFile.mipsFileName  = "\\systemroot\\system32\\drivers\\HcwE5CPU_MIPS.bin";
 		gFirmwareFile.mipsBaseAddr  = 0x80010000;
