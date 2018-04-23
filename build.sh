@@ -2,6 +2,7 @@
 
 make
 
+sudo cp 99-Hauppauge-PVR2.rules /etc/udev/rules.d/
 sudo cp Common/settings.cfg /etc/hauppauge-colossus2.cfg
 sudo mkdir -p /lib/firmware/hauppauge
 sudo cp Common/EncoderDev/HAPIHost/bin/mips_vx_host_slave.bin /lib/firmware/hauppauge
