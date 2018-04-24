@@ -117,9 +117,7 @@ bool encoderDev_DXT_t::setInputFormat(encoderSource_t source, encoderAudioInForm
 			break;
 	}
 
-	if(audioSampleRate != 0) {
-		hapi->set_param(&_Param, "AudioCapSampleRate", getAudioCapSampleRateNum(audioSampleRate));
-	}
+	hapi->set_param(&_Param, "AudioCapSampleRate", getAudioCapSampleRateNum(audioSampleRate));
 
 	if(!hapi->HapiParamSet(&_Param)) {
 		wrapLogError(" HapiParamSet() failed!!");
@@ -157,9 +155,7 @@ bool encoderDev_DXT_t::setHDMIFormat(int hdmi_fmt, float audioSampleRate) {
 //	hapi->set_param(&_Param, "VideoLatency", 1);
 
 	hapi->set_param(&_Param, "AudioCapSource", 3); // always HDMI for this design // 0: LR, 1:SPDIF, 2:SDI, 3: HDMI
-	if(audioSampleRate != 0) {
-		hapi->set_param(&_Param, "AudioCapSampleRate", getAudioCapSampleRateNum(audioSampleRate));
-	}
+	hapi->set_param(&_Param, "AudioCapSampleRate", getAudioCapSampleRateNum(audioSampleRate));
 
 	if(!hapi->HapiParamSet(&_Param)) {
 		wrapLogError(" HapiParamSet() failed!!");
