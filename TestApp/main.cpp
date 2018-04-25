@@ -269,6 +269,7 @@ static dev_ret_t useDevice(USBWrapper_t &usb) {
 				return DEV_DONE;
 			}
 			rxDev.setOutputBusMode(RXOBM_656_10);
+			_audio_CX2081x.init();
 
 		} break;
 
