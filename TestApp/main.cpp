@@ -392,7 +392,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 	evtInit();
-	wrapRegistryLoad("/etc/hauppauge-colossus2.cfg");
+	wrapRegistryLoad("/etc/hauppauge/Common/settings.cfg");
 	int retries = 10;
 	do {
 		USBWrapper_t usb;
